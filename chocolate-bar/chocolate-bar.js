@@ -7,9 +7,13 @@
 // If input data is invalid you should return 0 (as in no breaks are needed if we do not have any chocolate to split). Input will always be a non-negative integer.
 
 var breakChocolate = function(n, m) {
+// top solution
+// return (n*m === 0) ? 0 : n * m - 1;
+//my solution
 let breaks = 0;
 if (n && m) {
   breaks += (n - 1) + (n * ( m - 1));
+};
 }
 return breaks;
 
